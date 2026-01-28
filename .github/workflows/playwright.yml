@@ -33,7 +33,7 @@ jobs:
       run: npm install allure-commandline
     
     - name: Run Playwright tests
-      run: npm test -- --shard=${{ matrix.shard }}
+      run: npm test -- --shard=${{ matrix.shard }}/2
       env:
         CI: true
     
